@@ -10,7 +10,7 @@ conn = sqlite3.connect('articles.db')
 c = conn.cursor()
 
 # Drop the table
-c.execute("""DROP TABLE article""")
+c.execute("""DROP TABLE IF EXISTS article""")
 
 # Ccreate the table
 c.execute("""CREATE TABLE IF NOT EXISTS article (
