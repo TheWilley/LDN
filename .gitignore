@@ -1,1 +1,2 @@
-*.db
+.articles.db
+__pycache__/
