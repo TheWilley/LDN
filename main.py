@@ -8,6 +8,7 @@ URL = "https://www.lidkopingsnytt.nu"
 
 def getContent(thisurl):
     tag_p = None
+    tag_li = None
     joind = []
 
     # Make a request
@@ -21,13 +22,15 @@ def getContent(thisurl):
     links = soup.findAll("div", id="artikel")
 
     for e in links:
-        # Get all 'a' tags
+        # Get all 'p' tags
         tag_p = e.find_all("p")
+        tag_li = e.find_all("li")
 
     try:
-        for e in tag_p:
+        for e in tag_p, tag_li:
             point = str(e)
             joind.append(point)
+
     except(TypeError):
         pass
 
@@ -103,6 +106,7 @@ def start():
     end = time.time()
     closedb()
     print((end - start) / 60)
+    print("END OF THE PROGRAM!!!")
 
 
 start()
