@@ -10,8 +10,6 @@
     <script src="masonry.js"></script>
 
     <style>
-        .card-img-top {}
-
         #description {
             font-size: 0.8em;
             color: rgb(208, 190, 190);

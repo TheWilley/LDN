@@ -28,7 +28,7 @@ def getContent(thisurl):
 
     try:
         for e in tag_p, tag_li:
-            point = str(e)
+            point = ' '.join([str(elem) for elem in e]);
             joind.append(point)
 
     except(TypeError):
@@ -47,8 +47,6 @@ def sccrape(thisurl):
 
     # Find all links
     links = soup.findAll("div", class_="Framsidan")
-
-    print(thisurl)
 
     # For every article found
     for e in links:

@@ -28,7 +28,7 @@ c.execute("""CREATE TABLE IF NOT EXISTS article (
 # Function to generate
 def insertToDatebase(link, image, title, date, content):
     c.execute("INSERT INTO article (link, image, title, date, content) VALUES (?, ?, ?, ?, ?);", (link, image, title, date, content))
-    print("DONE")
+    print(link + ":DONE")
     conn.commit()
 
 def closedb():

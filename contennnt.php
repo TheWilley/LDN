@@ -48,11 +48,10 @@
             while ($row = $res->fetchArray()) {
                 echo '<div id="content">';
                 echo "<h1> <u> {$row['title']} </u> </h1>";
-
                 
                 echo "{$row['content']}";
 
-                echo '<div id="link"> <a href="'."{$row['link']}".'"> ORGIINAL </a> </div>' ;
+                echo '<div id="link"> <a href="'."{$row['link']}".'"> ORGINAL </a> </div>' ;
                 echo '</div>';
                 
             }
