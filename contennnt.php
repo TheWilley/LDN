@@ -27,6 +27,10 @@
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
 
+            #content em {
+                font-size: 0.8em;
+            }
+
             #link{
                 border-top: 2px dashed gray;
                 font-style: italic;

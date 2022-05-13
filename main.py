@@ -71,6 +71,8 @@ def sccrape(thisurl):
                 pass
             else:
                 temp_title = l1["title"]
+            
+            break
 
         # Get image
         tag_p = e.find_all("p")
