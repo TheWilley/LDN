@@ -1,6 +1,6 @@
 
 # LDN
-LDN is a parser of the website [lidkopingsnytt.nu](https://www.lidkopingsnytt.nu/), with the aim to take it's content and put a new coat of ppaint on it.
+LDN is a web crawler of the website [lidkopingsnytt.nu](https://www.lidkopingsnytt.nu/), with the aim to take it's content and put a new coat of paint on it.
 
 Below, you will find a description of all files:
 
