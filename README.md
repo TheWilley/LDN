@@ -24,7 +24,10 @@ Below, you will find a description of all files:
 
 ### One liners
 These will install and create everything for you.
-MAC: `python3 -m venv ldn;source ldn/bin/activate;cp -r release ldn;pip3 install -r ldn/release/python/requirements.txt`
+MAC: 
+```
+python3 -m venv ldn;source ldn/bin/activate;cp -r release ldn;pip3 install -r ldn/release/python/requirements.txt
+```
 
 ## Why not host this on a webpage?
 Due to copyright, I cannot host this project on a server accessible to the public.
