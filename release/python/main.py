@@ -1,3 +1,8 @@
+# First, install requiered packages
+import os
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+
+# Start of sccript
 from sqllite import insertToDatebase, closedb
 import time
 import requests
