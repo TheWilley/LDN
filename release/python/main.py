@@ -1,12 +1,10 @@
-# First, install requiered packages
-import os
-subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
-
-# Start of sccript
+# Start of script
 from sqllite import insertToDatebase, closedb
 import time
-import requests
+import requests 
 from bs4 import BeautifulSoup
+import os
+import shutil
 
 # The target URL
 URL = "https://www.lidkopingsnytt.nu"
@@ -116,6 +114,7 @@ def start():
     closedb()
 
     # End of program
+    shutil.move("articles.db", "./database/articles.db")
     print((end - start) / 60 + "min")
     print("END OF THE PROGRAM!!!")
 

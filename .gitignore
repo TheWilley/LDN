@@ -1,4 +1,5 @@
 articles.db
+sqllite.pyc
 __pycache__/
 venv/
 LDN/
