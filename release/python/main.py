@@ -114,8 +114,8 @@ def start():
     closedb()
 
     # End of program
-    shutil.move("articles.db", "./database/articles.db")
-    print((end - start) / 60 + "min")
+    shutil.move("articles.db", "../database/articles.db")
+    print((end - start) / 60)
     print("END OF THE PROGRAM!!!")
 
 
