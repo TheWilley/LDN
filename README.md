@@ -8,19 +8,9 @@ Below, you will find a description of all files:
 |---|---|---|---|---|---|---|
 | **Description** | The databse file conataing all the data (OBS: This file is generated)| The article itself | The main php file where all articles are visible in a grid formation | Scrapes the website content | The database implementation | Used by index.php to make the grid formation |
 
-
-### 
-
-
-  
-
 ## Dependencies
-
 * Python
-
 * XAMPP
-
-  
 
 ## Installation
 **Make sure you have the latest version of python and also have turned on both the server and database inside xampp!**
@@ -31,6 +21,10 @@ Below, you will find a description of all files:
 4. CD into `release`, then `python` and run `pip install -r requirements.txt`.
 5. Run `python main.py`. You will see a steady output of *"DONE"*. The process is finished once *"END OF THE PROGRAM!!!"* is shown!
 6. Open `index.php` via localhost.
+
+### One liners
+These will install and create everything for you.
+MAC: `python3 -m venv ldn;source ldn/bin/activate;cp -r release ldn;pip3 install -r ldn/release/python/requirements.txt`
 
 ## Why not host this on a webpage?
 Due to copyright, I cannot host this project on a server accessible to the public.
