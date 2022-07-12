@@ -11,6 +11,22 @@
     <style>
             .container {
                 max-width: 1800px;
+                padding-top: 30px;
+            }
+
+            .alignleft {
+                float: left;
+            }
+
+            #home {
+                display: inline-block;
+                padding: 30px;
+                float: left;
+            }
+
+            #description {
+                font-size: 0.8em;
+                color: rgb(208, 190, 190);
             }
 
             #content{
@@ -21,19 +37,26 @@
             
             #content img{
                 display: block;
+                margin-right: 15px
             }
 
-            #content > p:nth-child(2) > a > img {
+            #content > p:nth-child(2) > img {
                 width: 100%;
                 min-height: 300px;
             }
 
             #content p{
                 font-family: Franklin Gothic Medium;
+                overflow: auto;
             }
 
             #content em {
                 font-size: 0.8em;
+                text-align: left;
+            }
+
+            #content em #text{
+                text-align: left;
             }
 
             #link{
@@ -45,6 +68,7 @@
 </head>
 
 <body>
+    <a href='../php/index.php' id="home"> LDN </a>
     <div class="container bootstrap">
         <div>
             <?php
@@ -57,6 +81,8 @@
             while ($row = $res->fetchArray()) {
                 echo '<div id="content">';
                 echo "<h1> {$row['title']} </h1>";
+                echo "<p id='description'> {$row['date']} </p>";
+
                 
                 echo "{$row['content']}";
 
@@ -68,9 +94,8 @@
         </div>
 
     </div>
-
 </body>
 
-<script src="masonry.js"> </script>
+<script src="../lib/ar.js"> </script>
 
 </html>
