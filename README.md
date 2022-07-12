@@ -8,9 +8,9 @@ Below, you will find a description of all files:
 
 ### articles.db
 
-The databse fille conataing all the data
+The databse file conataing all the data
 
-  
+OBS: This file will be generated! Due to copyright, it is not possible to upload it on github!
 
 ### content.php
 
