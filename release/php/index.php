@@ -42,12 +42,9 @@
 
     <div class="container bootstrap">
         <div class="row justify-content-center"'>
-
             <?php
             $db = new SQLite3('../database/articles.db');
-
             $res = $db->query('SELECT * FROM article');
-
             $counter = 0;
 
             while ($row = $res->fetchArray()) {

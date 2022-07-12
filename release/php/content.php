@@ -73,22 +73,18 @@
         <div>
             <?php
             $db = new SQLite3('../database/articles.db');
-
             $id = $_GET['aid'];
-
             $res = $db->query('SELECT * FROM article WHERE id=' . $id . '');
 
             while ($row = $res->fetchArray()) {
                 echo '<div id="content">';
                 echo "<h1> {$row['title']} </h1>";
                 echo "<p id='description'> {$row['date']} </p>";
-
                 
                 echo "{$row['content']}";
 
                 echo '<div id="link"> <a href="'."{$row['link']}".'"> ORGINAL </a> </div>' ;
                 echo '</div>';
-                
             }
             ?>
         </div>
