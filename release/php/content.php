@@ -23,6 +23,11 @@
                 display: block;
             }
 
+            #content > p:nth-child(2) > a > img {
+                width: 100%;
+                min-height: 300px;
+            }
+
             #content p{
                 font-family: Franklin Gothic Medium;
             }
@@ -51,7 +56,7 @@
 
             while ($row = $res->fetchArray()) {
                 echo '<div id="content">';
-                echo "<h1> <u> {$row['title']} </u> </h1>";
+                echo "<h1> {$row['title']} </h1>";
                 
                 echo "{$row['content']}";
 

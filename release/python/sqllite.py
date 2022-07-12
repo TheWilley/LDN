@@ -1,10 +1,11 @@
-import sqlite3
+import sqlite3, os
 
 # Select file
 dbfile = 'articles.db'
 
 # Create a connection to file
-conn = sqlite3.connect('articles.db')
+print()
+conn = sqlite3.connect(os.path.dirname(__file__) + '/articles.db')
 
 # Create cursor
 c = conn.cursor()

@@ -23,10 +23,11 @@ Below, you will find a description of all files:
 6. Open `index.php` via localhost.
 
 ### One liners
-These will install and create everything for you.
+Run these commands directly from the cloned projjects
+
 MAC: 
 ```
-python3 -m venv ldn;source ldn/bin/activate;cp -r release ldn;pip3 install -r ldn/release/python/requirements.txt
+python3 -m venv ldn;source ldn/bin/activate;cp -r release ldn;pip3 install -r ldn/release/python/requirements.txt;python ldn/release/python/main.py
 ```
 
 ## Why not host this on a webpage?

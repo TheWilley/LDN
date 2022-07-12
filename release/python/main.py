@@ -9,6 +9,9 @@ import shutil
 # The target URL
 URL = "https://www.lidkopingsnytt.nu"
 
+# Relevant Path
+rp = os.path.dirname(__file__)
+
 def getContent(thisurl):
     tag_p = None
     tag_li = None
@@ -114,7 +117,7 @@ def start():
     closedb()
 
     # End of program
-    shutil.move("articles.db", "../database/articles.db")
+    shutil.move(rp + "/articles.db", rp + "/../database/articles.db")
     print((end - start) / 60)
     print("END OF THE PROGRAM!!!")
 
