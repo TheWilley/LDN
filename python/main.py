@@ -16,7 +16,6 @@ def getContent(thisurl):
 
     # Instannnce the soup library
     soup = BeautifulSoup(r.content, "html.parser")
-    # from_encoding="iso-8859-1"
 
     # Find all links
     links = soup.findAll("div", id="artikel")
@@ -94,8 +93,10 @@ def sccrape(thisurl):
 
 
 def start():
+    # Start a timer
     start = time.time()
 
+    # Parse x articcles
     for i in range(4):
         if i == 0:
             pass
@@ -103,9 +104,14 @@ def start():
             tempurl = URL + "/page/" + str(i)
             sccrape(tempurl)
 
+    # End the timer
     end = time.time()
+
+    # Close the databse
     closedb()
-    print((end - start) / 60)
+
+    # End of program
+    print((end - start) / 60 + "min")
     print("END OF THE PROGRAM!!!")
 
 

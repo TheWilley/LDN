@@ -44,7 +44,7 @@
         <div class="row justify-content-center"'>
 
             <?php
-            $db = new SQLite3('articles.db');
+            $db = new SQLite3('../database/articles.db');
 
             $res = $db->query('SELECT * FROM article');
 
@@ -53,7 +53,7 @@
             while ($row = $res->fetchArray()) {
                 echo '<div class="col-md-4 py-3 grid-item" style="width: 18rem;">';
                 if ($row['content'] != "None")
-                    echo '<a href="contennnt.php?aid=' . "{$row['id']}" . '">';
+                    echo '<a href="content.php?aid=' . "{$row['id']}" . '">';
                 echo '<div class="card">';
                 if ($row['image'] != null)
                     echo '<img src="' . "{$row['image']}" . '" class="card-img-top" alt="...">';

@@ -43,7 +43,7 @@
     <div class="container bootstrap">
         <div>
             <?php
-            $db = new SQLite3('articles.db');
+            $db = new SQLite3('../database/articles.db');
 
             $id = $_GET['aid'];
 
