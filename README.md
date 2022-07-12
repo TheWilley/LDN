@@ -52,7 +52,9 @@ Used by index.php to make the grid formation
 ## Installation
 **Make sure you have the latest version of python and also have turned on both the server and database inside xampp!**
 
-1. Clone the project into `htdocs`. 
-2. Run `pip install -r requirements.txt` to install required packages. 
-3. CD into the folder called `LDN` and run `python main.py`. You will see a steady output of *"DONE"*. The process is finished once *"END OF THE PROGRAM!!!"* is shown!
+1. Create a virtual enviorment in `htdocs` with `python3 -m venv ldn`
+2. Active the virtual enviorment with `ldn\Scripts\activate.bat` on windows and `source ldn/bin/activate` on mac
+3. Clone the project into the folder of the virtual enviorment and CD into it.
+4. Run `pip install -r requirements.txt` to install required packages. 
+5. Run `python main.py`. You will see a steady output of *"DONE"*. The process is finished once *"END OF THE PROGRAM!!!"* is shown!
 4. Open `index.php` via localhost.
